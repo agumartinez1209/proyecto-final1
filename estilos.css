@@ -1,0 +1,96 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: black;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase;
+}
+header{
+    background-image: url(img/producto46.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+article, h3, h5, p{
+    text-align: center;
+}
+
+h1 { 
+    font-size: 450% 
+}
+h2 { 
+    font-size: 300%;
+    text-align: center;
+}
+
+.novedades:hover{
+    background-color: #749345;
+}
+.color{
+    color:white;
+}
+.valorescolor{
+    background-color: black;
+}
+.mt-n1 {
+    margin-top: 1rem !important;
+  }
+
+/* ANIMACIONES */
+
+
+  .imagenAnimada{
+    animation-name: imagenAnimada;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+
+@keyframes imagenAnimada{
+    0%{
+        
+        opacity:0;
+        transform:translateX(100vw)
+    }
+    25%{
+        transform:translateX(0vw)
+    }
+    50%{
+        
+    }
+    75%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+        opacity: 1;
+    }
+}
+
+.textoAnimado{
+    animation-name: textoAnimado;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+}
+
+@keyframes textoAnimado{
+        0%{
+            opacity: 0;
+        }
+
+        25%{
+            opacity: 0.5;
+        }
+        100%{
+
+            opacity: 1;
+        }
+}
+
